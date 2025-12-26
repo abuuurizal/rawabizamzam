@@ -436,10 +436,6 @@
             <h3 class="text-3xl md:text-4xl font-bold text-white">5000+</h3>
             <p class="text-white/60 text-sm">Jamaah Terlayani</p>
           </div>
-          <div class="text-center">
-            <h3 class="text-3xl md:text-4xl font-bold text-primary">100%</h3>
-            <p class="text-white/60 text-sm">Kepuasan Jamaah</p>
-          </div>
         </div>
       </div>
     </section>
@@ -579,10 +575,10 @@
         <div class="text-center mb-10">
           <span
             class="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-4"
-            >Paket Umroh</span
+            >Program Umroh</span
           >
           <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
-            Pilih Paket <span class="text-primary">Sesuai Kebutuhan</span>
+            Pilih Program <span class="text-primary">Sesuai Kebutuhan</span>
           </h2>
         </div>
 
@@ -596,7 +592,7 @@
               <div class="flex items-stretch">
                 <!-- Left: Price Badge -->
                 <div
-                  class="bg-primary rounded-r-3xl px-4 py-5 flex flex-col items-center justify-center min-w-[130px]"
+                  class="bg-primary rounded-r-3xl px-4 py-5 flex flex-col items-center justify-center min-w-[110px] sm:min-w-[130px]"
                 >
                   <span
                     class="text-[10px] text-white/80 font-medium uppercase tracking-wide"
@@ -608,39 +604,52 @@
                   <span class="text-xs text-white/80">9 hari</span>
                 </div>
 
-                <!-- Middle: Hotel Info -->
-                <div class="flex-1 px-4 py-4 flex flex-col justify-center">
-                  <div class="mb-2">
-                    <p class="text-gray-800 font-bold text-sm">
-                      Hotel Makkah ★4
-                    </p>
-                    <p class="text-gray-500 text-xs">100 M ke Harom</p>
-                  </div>
-                  <div>
-                    <p class="text-gray-800 font-bold text-sm">
-                      Hotel Madinah ★4
-                    </p>
-                    <p class="text-gray-500 text-xs">400 M ke Harom</p>
-                  </div>
-                </div>
-
-                <!-- Right: Airline Logos -->
-                <div class="px-3 flex items-center justify-center">
+                <!-- Right Content: Hotel Info + Airline (stacked on mobile) -->
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center">
+                  <!-- Hotel Info -->
                   <div
-                    class="bg-gray-50 rounded-xl p-2 w-24 h-20 flex flex-col items-center justify-center gap-1"
+                    class="flex-1 px-3 sm:px-4 py-2 sm:py-4 flex flex-col justify-center"
                   >
-                    <img
-                      src="assets/maskapai/Qatar_Airways_Logo.webp"
-                      alt="Qatar Airways"
-                      class="h-8 w-20 object-contain flex-shrink-0"
-                      onerror="this.outerHTML='<span class=\'text-purple-700 font-bold text-[10px]\'>QATAR</span>'"
-                    />
-                    <img
-                      src="assets/maskapai/etihad-airways.webp"
-                      alt="Etihad Airways"
-                      class="h-8 w-20 object-contain flex-shrink-0"
-                      onerror="this.outerHTML='<span class=\'text-amber-600 font-bold text-[10px]\'>ETIHAD</span>'"
-                    />
+                    <div class="flex sm:block gap-3 sm:gap-0">
+                      <div class="sm:mb-2">
+                        <p class="text-gray-800 font-bold text-xs sm:text-sm">
+                          Hotel Makkah ★4
+                        </p>
+                        <p class="text-gray-500 text-xs hidden sm:block">
+                          100 M ke Harom
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-gray-800 font-bold text-xs sm:text-sm">
+                          Hotel Madinah ★4
+                        </p>
+                        <p class="text-gray-500 text-xs hidden sm:block">
+                          400 M ke Harom
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Airline Logos -->
+                  <div
+                    class="px-3 pb-2 sm:pb-0 flex items-center justify-start sm:justify-center"
+                  >
+                    <div
+                      class="bg-gray-50 rounded-xl p-1.5 sm:p-2 flex sm:flex-col items-center justify-center gap-1"
+                    >
+                      <img
+                        src="assets/maskapai/Qatar_Airways_Logo.webp"
+                        alt="Qatar Airways"
+                        class="h-6 sm:h-8 w-14 sm:w-20 object-contain flex-shrink-0"
+                        onerror="this.outerHTML='<span class=\'text-purple-700 font-bold text-[10px]\'>QATAR</span>'"
+                      />
+                      <img
+                        src="assets/maskapai/etihad-airways.webp"
+                        alt="Etihad Airways"
+                        class="h-6 sm:h-8 w-14 sm:w-20 object-contain flex-shrink-0"
+                        onerror="this.outerHTML='<span class=\'text-amber-600 font-bold text-[10px]\'>ETIHAD</span>'"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -655,7 +664,7 @@
               <div class="flex items-stretch">
                 <!-- Left: Price Badge -->
                 <div
-                  class="bg-primary rounded-r-3xl px-4 py-5 flex flex-col items-center justify-center min-w-[130px]"
+                  class="bg-primary rounded-r-3xl px-4 py-5 flex flex-col items-center justify-center min-w-[110px] sm:min-w-[130px]"
                 >
                   <span
                     class="text-[10px] text-white/80 font-medium uppercase tracking-wide"
@@ -667,33 +676,46 @@
                   <span class="text-xs text-white/80">12 hari</span>
                 </div>
 
-                <!-- Middle: Hotel Info -->
-                <div class="flex-1 px-4 py-4 flex flex-col justify-center">
-                  <div class="mb-2">
-                    <p class="text-gray-800 font-bold text-sm">
-                      Hotel Makkah ★4
-                    </p>
-                    <p class="text-gray-500 text-xs">100 M ke Harom</p>
-                  </div>
-                  <div>
-                    <p class="text-gray-800 font-bold text-sm">
-                      Hotel Madinah ★4
-                    </p>
-                    <p class="text-gray-500 text-xs">400 M ke Harom</p>
-                  </div>
-                </div>
-
-                <!-- Right: Airline Logo -->
-                <div class="px-3 flex items-center justify-center">
+                <!-- Right Content: Hotel Info + Airline (stacked on mobile) -->
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center">
+                  <!-- Hotel Info -->
                   <div
-                    class="bg-gray-50 rounded-xl p-2 w-24 h-20 flex items-center justify-center"
+                    class="flex-1 px-3 sm:px-4 py-2 sm:py-4 flex flex-col justify-center"
                   >
-                    <img
-                      src="assets/maskapai/etihad-airways.webp"
-                      alt="Etihad Airways"
-                      class="h-12 w-20 object-contain flex-shrink-0"
-                      onerror="this.parentElement.innerHTML='<span class=\'text-amber-600 font-bold text-xs\'>ETIHAD</span>'"
-                    />
+                    <div class="flex sm:block gap-3 sm:gap-0">
+                      <div class="sm:mb-2">
+                        <p class="text-gray-800 font-bold text-xs sm:text-sm">
+                          Hotel Makkah ★4
+                        </p>
+                        <p class="text-gray-500 text-xs hidden sm:block">
+                          100 M ke Harom
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-gray-800 font-bold text-xs sm:text-sm">
+                          Hotel Madinah ★4
+                        </p>
+                        <p class="text-gray-500 text-xs hidden sm:block">
+                          400 M ke Harom
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Airline Logo -->
+                  <div
+                    class="px-3 pb-2 sm:pb-0 flex items-center justify-start sm:justify-center"
+                  >
+                    <div
+                      class="bg-gray-50 rounded-xl p-1.5 sm:p-2 flex items-center justify-center"
+                    >
+                      <img
+                        src="assets/maskapai/etihad-airways.webp"
+                        alt="Etihad Airways"
+                        class="h-6 sm:h-12 w-14 sm:w-20 object-contain flex-shrink-0"
+                        onerror="this.parentElement.innerHTML='<span class=\'text-amber-600 font-bold text-xs\'>ETIHAD</span>'"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -713,7 +735,7 @@
               <div class="flex items-stretch">
                 <!-- Left: Price Badge -->
                 <div
-                  class="bg-gradient-to-b from-amber-500 to-amber-600 rounded-r-3xl px-4 py-5 flex flex-col items-center justify-center min-w-[130px]"
+                  class="bg-gradient-to-b from-amber-500 to-amber-600 rounded-r-3xl px-4 py-5 flex flex-col items-center justify-center min-w-[110px] sm:min-w-[130px]"
                 >
                   <span
                     class="text-[10px] text-white/80 font-medium uppercase tracking-wide"
@@ -725,39 +747,52 @@
                   <span class="text-xs text-white/80">9 hari</span>
                 </div>
 
-                <!-- Middle: Hotel Info -->
-                <div class="flex-1 px-4 py-4 flex flex-col justify-center">
-                  <div class="mb-2">
-                    <p class="text-gray-800 font-bold text-sm">
-                      Hotel Makkah ★4
-                    </p>
-                    <p class="text-gray-500 text-xs">100 M ke Harom</p>
-                  </div>
-                  <div>
-                    <p class="text-gray-800 font-bold text-sm">
-                      Hotel Madinah ★4
-                    </p>
-                    <p class="text-gray-500 text-xs">200 M ke Harom</p>
-                  </div>
-                </div>
-
-                <!-- Right: Airline Logos -->
-                <div class="px-3 flex items-center justify-center">
+                <!-- Right Content: Hotel Info + Airline (stacked on mobile) -->
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center">
+                  <!-- Hotel Info -->
                   <div
-                    class="bg-gray-50 rounded-xl p-2 w-24 h-20 flex flex-col items-center justify-center gap-1"
+                    class="flex-1 px-3 sm:px-4 py-2 sm:py-4 flex flex-col justify-center"
                   >
-                    <img
-                      src="assets/maskapai/Saudi-Arabian-Airlines-Logo.webp"
-                      alt="Saudia Airlines"
-                      class="h-8 w-20 object-contain flex-shrink-0"
-                      onerror="this.outerHTML='<span class=\'text-green-700 font-bold text-[10px]\'>SAUDIA</span>'"
-                    />
-                    <img
-                      src="assets/maskapai/Logo-Lion-Air.webp"
-                      alt="Lion Air"
-                      class="h-8 w-20 object-contain flex-shrink-0"
-                      onerror="this.outerHTML='<span class=\'text-red-600 font-bold text-[10px]\'>LION AIR</span>'"
-                    />
+                    <div class="flex sm:block gap-3 sm:gap-0">
+                      <div class="sm:mb-2">
+                        <p class="text-gray-800 font-bold text-xs sm:text-sm">
+                          Hotel Makkah ★4
+                        </p>
+                        <p class="text-gray-500 text-xs hidden sm:block">
+                          100 M ke Harom
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-gray-800 font-bold text-xs sm:text-sm">
+                          Hotel Madinah ★4
+                        </p>
+                        <p class="text-gray-500 text-xs hidden sm:block">
+                          200 M ke Harom
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Airline Logos -->
+                  <div
+                    class="px-3 pb-2 sm:pb-0 flex items-center justify-start sm:justify-center"
+                  >
+                    <div
+                      class="bg-gray-50 rounded-xl p-1.5 sm:p-2 flex sm:flex-col items-center justify-center gap-1"
+                    >
+                      <img
+                        src="assets/maskapai/Saudi-Arabian-Airlines-Logo.webp"
+                        alt="Saudia Airlines"
+                        class="h-6 sm:h-8 w-14 sm:w-20 object-contain flex-shrink-0"
+                        onerror="this.outerHTML='<span class=\'text-green-700 font-bold text-[10px]\'>SAUDIA</span>'"
+                      />
+                      <img
+                        src="assets/maskapai/Logo-Lion-Air.webp"
+                        alt="Lion Air"
+                        class="h-6 sm:h-8 w-14 sm:w-20 object-contain flex-shrink-0"
+                        onerror="this.outerHTML='<span class=\'text-red-600 font-bold text-[10px]\'>LION AIR</span>'"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -780,7 +815,7 @@
               <div class="flex items-stretch">
                 <!-- Left: Price Badge -->
                 <div
-                  class="bg-gradient-to-b from-purple-600 to-purple-700 rounded-r-3xl px-4 py-5 flex flex-col items-center justify-center min-w-[130px]"
+                  class="bg-gradient-to-b from-purple-600 to-purple-700 rounded-r-3xl px-4 py-5 flex flex-col items-center justify-center min-w-[110px] sm:min-w-[130px]"
                 >
                   <span
                     class="text-[10px] text-white/80 font-medium uppercase tracking-wide"
@@ -792,33 +827,46 @@
                   <span class="text-xs text-white/80">9 hari</span>
                 </div>
 
-                <!-- Middle: Hotel Info -->
-                <div class="flex-1 px-4 py-4 flex flex-col justify-center">
-                  <div class="mb-2">
-                    <p class="text-gray-800 font-bold text-sm">
-                      Hotel Makkah ★5
-                    </p>
-                    <p class="text-gray-500 text-xs">100 M ke Harom</p>
-                  </div>
-                  <div>
-                    <p class="text-gray-800 font-bold text-sm">
-                      Hotel Madinah ★5
-                    </p>
-                    <p class="text-gray-500 text-xs">200 M ke Harom</p>
-                  </div>
-                </div>
-
-                <!-- Right: Airline Logo -->
-                <div class="px-3 flex items-center justify-center">
+                <!-- Right Content: Hotel Info + Airline (stacked on mobile) -->
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center">
+                  <!-- Hotel Info -->
                   <div
-                    class="bg-gray-50 rounded-xl p-2 w-24 h-20 flex items-center justify-center"
+                    class="flex-1 px-3 sm:px-4 py-2 sm:py-4 flex flex-col justify-center"
                   >
-                    <img
-                      src="assets/maskapai/Saudi-Arabian-Airlines-Logo.webp"
-                      alt="Saudia Airlines"
-                      class="h-12 w-20 object-contain flex-shrink-0"
-                      onerror="this.parentElement.innerHTML='<span class=\'text-green-700 font-bold text-xs\'>SAUDIA</span>'"
-                    />
+                    <div class="flex sm:block gap-3 sm:gap-0">
+                      <div class="sm:mb-2">
+                        <p class="text-gray-800 font-bold text-xs sm:text-sm">
+                          Hotel Makkah ★5
+                        </p>
+                        <p class="text-gray-500 text-xs hidden sm:block">
+                          100 M ke Harom
+                        </p>
+                      </div>
+                      <div>
+                        <p class="text-gray-800 font-bold text-xs sm:text-sm">
+                          Hotel Madinah ★5
+                        </p>
+                        <p class="text-gray-500 text-xs hidden sm:block">
+                          200 M ke Harom
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Airline Logo -->
+                  <div
+                    class="px-3 pb-2 sm:pb-0 flex items-center justify-start sm:justify-center"
+                  >
+                    <div
+                      class="bg-gray-50 rounded-xl p-1.5 sm:p-2 flex items-center justify-center"
+                    >
+                      <img
+                        src="assets/maskapai/Saudi-Arabian-Airlines-Logo.webp"
+                        alt="Saudia Airlines"
+                        class="h-6 sm:h-12 w-14 sm:w-20 object-contain flex-shrink-0"
+                        onerror="this.parentElement.innerHTML='<span class=\'text-green-700 font-bold text-xs\'>SAUDIA</span>'"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1075,7 +1123,8 @@
               x-transition:leave="transition ease-in duration-200"
               x-transition:leave-start="opacity-100"
               x-transition:leave-end="opacity-0"
-              class="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 cursor-pointer"
+              @click.self="lightboxOpen = false"
               @keydown.escape.window="lightboxOpen = false"
               @keydown.arrow-left.window="currentImage = currentImage > 0 ? currentImage - 1 : 6"
               @keydown.arrow-right.window="currentImage = currentImage < 6 ? currentImage + 1 : 0"
@@ -1103,7 +1152,10 @@
               </button>
 
               <!-- Image Container -->
-              <div class="max-w-4xl max-h-[85vh] w-full">
+              <div
+                class="max-w-4xl max-h-[85vh] w-full cursor-default"
+                @click.stop
+              >
                 <template x-for="(img, index) in 7" :key="index">
                   <img
                     x-show="currentImage === index"
@@ -1205,7 +1257,6 @@
                     x-ref="video1"
                     class="w-full h-full object-cover"
                     loop
-                    muted
                     playsinline
                     preload="metadata"
                   >
@@ -1248,7 +1299,6 @@
                     x-ref="video2"
                     class="w-full h-full object-cover"
                     loop
-                    muted
                     playsinline
                     preload="metadata"
                   >
@@ -1289,7 +1339,6 @@
                     x-ref="video3"
                     class="w-full h-full object-cover"
                     loop
-                    muted
                     playsinline
                     preload="metadata"
                   >
@@ -1332,7 +1381,6 @@
                     x-ref="video4"
                     class="w-full h-full object-cover"
                     loop
-                    muted
                     playsinline
                     preload="metadata"
                   >
@@ -1546,7 +1594,7 @@
 
           <!-- Quick Links -->
           <div>
-            <h4 class="text-white font-semibold mb-4">Link Cepat</h4>
+            <h4 class="text-white font-semibold mb-4">Navigasi</h4>
             <ul class="space-y-2">
               <li>
                 <a
